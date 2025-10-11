@@ -1,72 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uma das Minhas Páginas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Éverton</title>
+
+
+
 </head>
-<body>
 
-    <h1>Olá. Mundo!</h1>
-    <p>Esta não é a minha primeira Página HTML.</p>
-    <h1>Este é um título principal</h1>
-    <h2>Este é um subtítulo</h2>
-    <h3>Subtítulo menor</h3>
+<style>
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+</style>
 
 
-    <a href="https://www.google.com" target="_blank">Clique aqui para visitar o Google</a>
+<body style="background-color: rgba(108, 108, 108, 0.443);">
 
-    <p>Espaço</p>
+  <!-- HEADER -->
+  <header
+    style="position: fixed; top: 0; left: 0; width: 100%; background-color: #ffffff; color: white; padding: 10px; z-index: 1000;">
+    <center><h2 style="color: rgb(255, 0, 0);">ÉVERTON REIS</h2></center>
+    <center>
+    <nav>
+      <a href="#intro">Início</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#formulario">Formulário</a>
+      <a href="./about.html">About</a>
+    </nav>
+  </center>
+  </header>
 
-    <img src="gojo.jpg" alt="Imagem de um belo homem.">
+  <main style="margin-top: 100px;">
+    <!-- INTRODUÇÃO -->
+    <section id="intro" style="padding-top: 80px; margin-top: -80px;">
+      <h1 style="color: #ff0000;">Olá, este é meu site Hehe 👻</h1>
+      <p>Sou um desenvolvedor de sistemas apaixonado por tecnologia e aprendizado constante 🚀</p>
+    </section>
+  </main>
 
+  <hr style="color: rgb(255, 0, 0);">
 
-    <h2>Lista Pontuada</h2>
+  <!-- HABILIDADES -->
+  <section id="habilidades" style="padding-top: 80px; margin-top: -80px;">
+    <h2 style="color: #ff0000;">MINHAS HABILIDADES:</h2>
     <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+      <li>HTML e CSS</li>
+      <li>Java com JUnit</li>
+      <li>Desenvolvimento Web</li>
+      <li>Trabalho em equipe 🤝</li>
+      <li>Lógica de programação</li>
     </ul>
+  </section>
 
-    <h2>Lista Numérica</h2>
-    <ol>
-        <li>Primeiro</li>
-        <li>Segundo</li>
-        <li>Terceiro</li>
-    </ol>
+  <hr style="color: rgb(255, 0, 0);">
 
- 
+  <!-- PROJETOS -->
+  <section id="projetos" style="padding-top: 80px; margin-top: -80px;">
+    <h2 style="color: #ff0000;">PROJETOS</h2>
+    <div class="projeto" style="border-color: #ff0000;">
+      <h3>HemoCentro</h3> 
+      <p>Um hemocentro é uma instituição especializada na coleta, processamento, armazenamento e distribuição de
+        sangue e seus componentes.</p>
+      <a href="https://github.com/EvertonERReis/UC12-FRONT-END-24-2N" target="_blank">Ver Projeto</a>
+    </div>
+  </section>
 
+  <hr style="color: rgb(255, 0, 0);">
 
- <h1>Exercícios Finais 🚀</h1>
+  <!-- FORMULÁRIO -->
+  <section id="formulario" style="padding-top: 80px; margin-top: -80px;">
+    <h2 style="color: #ff0000;">FORMULÁRIO DE CONTATO</h2>
+    <form action="#" method="post">
 
-    <ol>
-        <li>    Crie um segundo título (usando "h2") com uma breve descrição sua. </li>
-        <li>    Adicione duas imagens diferentes na página e certifique-se de incluir uma descrição em texto (usando o atributo alt).
-        </li>
-        <li>    Crie uma lista ordenada dos três lugares que você gostaria de visitar no futuro.
-        </li>
-    </ol>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required><br>
 
-<h2>Atividade 1: Descrição Sobre mim:</h1>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required><br>
 
-<h2>Me chamo João, tenho 18 anos e faço 19 em julho(24/07/2007). Moro no bairro Santos Dumont e estudo na Escola Polisinos, na São Borja. Atualmente, também curso Desenvolvimento de Sistemas no Senac, onde estou finalizando a UC11 e em breve iniciarei a UC12. Meu objetivo é comprar meu pc esse ano ainda e terminar a escola, no futuro, quero subir de cargo na empresa em que estou altualmente.</h2>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem"></textarea><br>
 
-<h2>Atividade 2: </h2>
+      <label for="conheceu">Como nos conheceu?</label>
+      <select id="conheceu" name="conheceu" required>
+        <option value="">Selecione uma opção</option>
+        <option value="amigos">Por amigos</option>
+        <option value="redes-sociais">Redes sociais</option>
+        <option value="pesquisa">Pesquisa na internet</option>
 
-<h2>Atividade 3: Lugares que eu gostaria de visitar no futuro </h3>
-<ol>
-    <li>Canadá</li>
-    <li>Minas Gerais</li>
-    <li>Suiça</li>
-</ol>
+      </select>
+      <br><br>
 
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
 
+  <hr style="color: rgb(255, 0, 0);">
   
-    <h1>Links</h1>
-    
-    <a href="https://github.com/Bayotto" target="_blank">Meu Github</a>
-
+  <!-- FOOTER -->
+  <footer>
+   <center> <p>&copy; 2025 Desenvolvido por Éverton Reiss</p> </center>
+  </footer>
 
 </body>
 </html>
