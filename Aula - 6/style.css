@@ -1,0 +1,10 @@
+img{
+    width: 300px;
+    height: 250px;
+}
+body{
+background-color: blueviolet;
+white-space: nowrap; /* Usar para tirar os espaços brancos*/
+min-width: 100%;
+min-height: 100vh; /* tamanho proporcional ao tamanho da onde esta sendo executado.*/
+}
