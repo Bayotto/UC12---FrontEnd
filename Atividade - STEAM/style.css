@@ -1,0 +1,162 @@
+body {
+    background: linear-gradient(to bottom, #222834 0%, #2d3a59 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+header {
+    background: #171a21;
+    color: #fff;
+    padding: 18px 30px 6px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 14px;
+    font-size: 1em;
+    padding-bottom: 3px;
+}
+
+nav .active {
+    color: #55baff;
+    border-bottom: 2px solid #55baff;
+}
+
+.install-btn {
+    background: #90c956;
+    color: #222;
+    padding: 6px 18px;
+    border-radius: 4px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: .96em;
+}
+
+.user-options {
+    color: #aaa;
+    font-size: .95em;
+}
+
+.menu-bar {
+    background: #23354b;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar li {
+    font-size: 1em;
+    color: #d6eaff;
+    cursor: pointer;
+}
+
+.search-bar {
+    background: #232a31;
+    border: none;
+    border-radius: 2px;
+    padding: 7px 12px;
+    color: #fff;
+    font-size: 1em;
+}
+
+main {
+    margin: 48px auto 0 auto;
+    width: 950px;
+}
+
+.recomendados h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #cbe2f2;
+    font-size: 1.13em;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    background: rgba(20, 27, 46, 0.84);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 30px 0 #0009;
+}
+
+.arrow {
+    font-size: 2.4em;
+    color: #fffc;
+    padding: 0 32px;
+    cursor: pointer;
+}
+
+.destaque > img {
+    width: 360px;
+    height: 330px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 36px 26px 36px 26px;
+    flex-grow: 1;
+}
+
+.info h3 {
+    margin: 0 0 18px 0;
+    color: #fff;
+    font-size: 2.0em;
+    font-weight: 700;
+}
+
+.screenshots {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.screenshots img {
+    border-radius: 3px;
+}
+
+.tag {
+    background: #33596e;
+    color: #beddff;
+    padding: 3px 9px;
+    border-radius: 2px;
+    font-size: .95em;
+    margin-left: 8px;
+}
+
+.gratis {
+    background: #3e7637;
+    color: #d7ffd2;
+    padding: 3px 9px;
+    border-radius: 2px;
+    font-size: .95em;
+    margin-left: 8px;
+}
+
+  
